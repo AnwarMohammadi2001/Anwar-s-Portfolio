@@ -27,7 +27,7 @@ const ContactPage = lazy(
 const App = () => {
 	return (
 		<>
-			<div className='bg-primary'>
+			<div className='bg-primary relative'>
 				<Suspense fallback={<Loading />}>
 					<BrowserRouter>
 						<Navbar />

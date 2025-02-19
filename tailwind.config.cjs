@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#050816",
+        primary: "#000322",
         secondary: "#aaa6c3",
         tertiary: "#151038",
         "black-100": "#100d25",
@@ -19,7 +19,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern": "url('/src/assets/hero12.jpg')",
       },
       animation: {
         text: 'text 5s ease infinite',
