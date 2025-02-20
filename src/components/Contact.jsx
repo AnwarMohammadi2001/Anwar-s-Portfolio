@@ -53,7 +53,7 @@ function Contact() {
 			);
 	};
 	return (
-		<div className='relative z-0'>
+		<div id="contact" className='relative z-0'>
 			<div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
 				<motion.div
 					variants={slideIn("left", "tween", 0.2, 1)}
@@ -122,4 +122,4 @@ function Contact() {
 	);
 }
 
-export default SectionWrapper(Contact, "contact");
+export default SectionWrapper(Contact, "#contact");

@@ -24,23 +24,23 @@ import {
   tailwind,
   twitter,
   typescript,
-  web
+  web,
 } from "../assets";
 
 export const navLinks = [
   {
-    id: "home",
+    id: "#home",
     desktop: "",
     title: "Home",
   },
   {
-    id: "work",
-    desktop: "work",
+    id: "#work",
+    desktop: "#work",
     title: "Work",
   },
   {
-    id: "contact",
-    desktop: "contact",
+    id: "#contact",
+    desktop: "#contact",
     title: "Contact",
   },
 ];
@@ -55,7 +55,23 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Custom Web Design",
+    title: "Backend Web Development ",
+    icon: backend,
+  },
+  {
+    title: "Website Optimization",
+    icon: creator,
+  },
+  {
+    title: "Frontend Web Development",
+    icon: mobile,
+  },
+  {
+    title: "Frontend Web Development",
+    icon: mobile,
+  },
+  {
+    title: "Backend Web Development ",
     icon: backend,
   },
   {
@@ -138,34 +154,47 @@ const experiences = [
       "Improving React development practices within the team to boost efficiency and quality.",
     ],
   },
+  {
+    title: "React Js Developer",
+    company_name: "CodeDrops Tech",
+    icon: codedrops,
+    iconBg: "#383E56",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing responsive web apps with React, Redux Toolkit, and TypeScript.",
+      "Creating efficient UIs with Tailwind CSS for web apps.",
+      "Collaborating with cross-functional teams to deliver quality web apps on time and within budget.",
+      "Improving React development practices within the team to boost efficiency and quality.",
+    ],
+  },
 ];
 
 const socials = [
   {
     image: linkedin,
-    link: "https://www.linkedin.com/in/sahil-khadka/"
+    link: "https://www.linkedin.com/in/sahil-khadka/",
   },
   {
     image: github,
-    link: "https://github.com/sahilxkhadka"
+    link: "https://github.com/sahilxkhadka",
   },
   {
     image: gitlab,
-    link: "https://gitlab.com/sahilkhadka767"
+    link: "https://gitlab.com/sahilkhadka767",
   },
   {
     image: twitter,
-    link: "https://twitter.com/SahilKhadka15"
+    link: "https://twitter.com/SahilKhadka15",
   },
   {
     image: instagram,
-    link: "https://www.instagram.com/sahil_khadka_627/"
+    link: "https://www.instagram.com/sahil_khadka_627/",
   },
   {
     image: gmail,
-    link: "mailto:sahilkhadka767@gmail.com"
-  }
-]
+    link: "mailto:sahilkhadka767@gmail.com",
+  },
+];
 
 const projects = [
   {
@@ -183,7 +212,7 @@ const projects = [
       },
       {
         name: "javascript",
-        color: "orange-text-gradient"
+        color: "orange-text-gradient",
       },
       {
         name: "jQuery",
@@ -209,7 +238,7 @@ const projects = [
       },
       {
         name: "javascript",
-        color: "orange-text-gradient"
+        color: "orange-text-gradient",
       },
       {
         name: "jQuery",
@@ -239,8 +268,8 @@ const projects = [
       },
       {
         name: "jQuery",
-        color: "pink-text-gradient"
-      }
+        color: "pink-text-gradient",
+      },
     ],
     image: abromart,
     openSource: false,

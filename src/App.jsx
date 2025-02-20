@@ -6,43 +6,42 @@ import Loading from "./components/canvas/Loading";
 import RedirectToHome from "./components/RedirectToHome";
 
 const Home = lazy(
-	async () =>
-		await import("./pages").then((module) => ({
-			default: module.Home,
-		}))
+  async () =>
+    await import("./pages").then((module) => ({
+      default: module.Home,
+    }))
 );
 const Workpage = lazy(
-	async () =>
-		await import("./pages").then((module) => ({
-			default: module.Work,
-		}))
+  async () =>
+    await import("./pages").then((module) => ({
+      default: module.Work,
+    }))
 );
 const ContactPage = lazy(
-	async () =>
-		await import("./pages").then((module) => ({
-			default: module.Contact,
-		}))
+  async () =>
+    await import("./pages").then((module) => ({
+      default: module.Contact,
+    }))
 );
 
 const App = () => {
-	return (
-		<>
-			<div className='bg-primary relative'>
-				<Suspense fallback={<Loading />}>
-					<BrowserRouter>
-						<Navbar />
-						<Routes>
-							<Route path='/' element={<Home />} />
-							<Route path='contact' element={<ContactPage />} />
-							<Route path='work' element={<Workpage />} />
-							<Route path='*' element={<RedirectToHome />} />
-						</Routes>
-					</BrowserRouter>
-				</Suspense>
-			</div>
-			<Analytics />
-		</>
-	);
+  return (
+    <>
+      <div className="bg-primary relative">
+        <Suspense fallback={<Loading />}>
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+
+              <Route path="*" element={<RedirectToHome />} />
+            </Routes>
+          </BrowserRouter>
+        </Suspense>
+      </div>
+      <Analytics />
+    </>
+  );
 };
 
 export default App;

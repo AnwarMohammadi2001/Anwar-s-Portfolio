@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon }) => {
   const tiltRef = useRef(null); // Create a ref for Tilt component
 
   return (
-    <Tilt ref={tiltRef} className="lg:min-w-[250px] min-w-full">
+    <Tilt  ref={tiltRef} className="lg:min-w-[250px] min-w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -68,7 +68,7 @@ const About = () => {
           />
         </motion.div>
       </div>
-      <div className="mt-20 lg:flex-row flex flex-col  gap-10">
+      <div className="mt-[300px] md:mt-20 lg:flex-row   flex-col grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  gap-10">
         {services.map((service, index) => {
           return <ServiceCard key={service.title} index={index} {...service} />;
         })}

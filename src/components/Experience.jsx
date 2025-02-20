@@ -24,6 +24,7 @@ const ExperienceCard = ({ experience }) => {
 					<img src={experience.icon} className='w-3/5 h-3/5 object-contain' />
 				</div>
 			}
+			className=""
 		>
 			<div>
 				<h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
@@ -31,7 +32,7 @@ const ExperienceCard = ({ experience }) => {
 					{experience.company_name}
 				</p>
 			</div>
-			<ul className='mt-5 list-disc ml-5 space-y-2'>
+			<ul className='mt-5 list-disc ml-5  space-y-2'>
 				{experience.points.map((point, index) => {
 					return (
 						<li
@@ -58,10 +59,10 @@ const Experience = () => {
 				<p className={styles.sectionSubText}>What I have done so far</p>
 				<h2 className={styles.sectionHeadText}>Work Experience.</h2>
 			</motion.div>
-			<div className='mt-20 flex flex-col'>
-				<VerticalTimeline>
+			<div className='mt-20 flex  flex-col'>
+				<VerticalTimeline className="">
 					{experiences.map((experience, index) => {
-						return <ExperienceCard key={index} experience={experience} />;
+						return <ExperienceCard key={index} experience={experience}  />;
 					})}
 				</VerticalTimeline>
 			</div>
