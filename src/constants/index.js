@@ -167,6 +167,19 @@ const experiences = [
       "Improving React development practices within the team to boost efficiency and quality.",
     ],
   },
+  {
+    title: "React Js Developer",
+    company_name: "CodeDrops Tech",
+    icon: codedrops,
+    iconBg: "#383E56",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing responsive web apps with React, Redux Toolkit, and TypeScript.",
+      "Creating efficient UIs with Tailwind CSS for web apps.",
+      "Collaborating with cross-functional teams to deliver quality web apps on time and within budget.",
+      "Improving React development practices within the team to boost efficiency and quality.",
+    ],
+  },
 ];
 
 const socials = [
@@ -197,6 +210,58 @@ const socials = [
 ];
 
 const projects = [
+  {
+    name: "FIB",
+    description:
+      "Web-based platform that allows users to create a wide range of high-quality capacity profiles. You can quickly set up a capacity profile (FML, IZP or BAR) using customizable formats.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "jQuery",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fib,
+    openSource: false,
+    source_code_link: "https://www.fibonline.nl/",
+  },
+  {
+    name: "FIB",
+    description:
+      "Web-based platform that allows users to create a wide range of high-quality capacity profiles. You can quickly set up a capacity profile (FML, IZP or BAR) using customizable formats.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "jQuery",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fib,
+    openSource: false,
+    source_code_link: "https://www.fibonline.nl/",
+  },
   {
     name: "FIB",
     description:

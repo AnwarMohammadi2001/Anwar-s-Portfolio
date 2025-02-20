@@ -11,7 +11,7 @@ const Social = () => {
 				variants={slideIn("left", "tween", 0.2, 1)}
 				viewport={{ once: false }}
 			>
-				<motion.div variants={textVariant} className='mt-12 bg-primary'>
+				<motion.div variants={textVariant} className=' bg-primary'>
 					<p className={styles.sectionSubText}>Connect with me.</p>
 					<h2 className={styles.sectionHeadText}>Socials</h2>
 				</motion.div>
